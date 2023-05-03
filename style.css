@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 58%);
+
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Hansen Grotesk";
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--White);
+}
+.result--wrapper {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue) 45%
+  );
+  padding: 1.5rem 1rem;
+  border-radius: 0px 0px 10px 10px;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.result--wrapper > span {
+  color: var(--Pale-blue);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.result--wrapper > .result {
+  background: linear-gradient(to bottom, #520fef, #2533f4);
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  padding: 1.2rem 2rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result > h1 {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.result > p {
+  color: #c6c4c4;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.greet--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.greet--wrapper > h2 {
+  color: var(--White);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.greet--wrapper > p {
+  width: 75%;
+  line-height: 1.5;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+.summary--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 1.5rem;
+  flex-basis: 100%;
+}
+.summary--wrapper > h3 {
+  color: var(--Dark-gray-blue);
+}
+
+.score--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.score--card {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.Reaction--card {
+  background: hsla(0, 100%, 67%, 0.1);
+  border-radius: 5px;
+}
+.Memory--card {
+  background: hsla(39, 100%, 56%, 0.1);
+  border-radius: 5px;
+}
+.Verbal--card {
+  background: hsla(166, 100%, 37%, 0.1);
+  border-radius: 5px;
+}
+.Visual--card {
+  background: hsl(234, 85%, 45%, 0.1);
+  border-radius: 5px;
+}
+
+.score--card > .score--logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+}
+.Reaction--card > .score--logo {
+  color: var(--Light-red);
+}
+.Memory--card > .score--logo {
+  color: var(--Orangey-yellow);
+}
+.Verbal--card > .score--logo {
+  color: var(--Green-teal);
+}
+.Visual--card > .score--logo {
+  color: var(--Cobalt-blue);
+}
+
+.total--score {
+  color: hsl(0, 0%, 52%);
+  font-weight: 700;
+}
+.total--score > span {
+  color: var(--Dark-gray-blue);
+}
+.continue--btn {
+  background: var(--Dark-gray-blue);
+  color: var(--White);
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.5s linear;
+}
+.continue--btn:hover {
+  background: hsl(224, 30%, 45%);
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  min-width: 250px;
+  width: 80%;
+  max-width: 300px;
+  font-size: clamp(11px, 3vw, 15px);
+}
+
+@media Screen and (min-width: 950px) {
+  body {
+    align-items: center;
+  }
+  main {
+    box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .result--wrapper {
+    flex-basis: 50%;
+  }
+  .summary--wrapper {
+    flex-basis: 50%;
+  }
+}
