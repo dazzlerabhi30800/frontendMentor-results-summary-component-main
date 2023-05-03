@@ -116,7 +116,7 @@ main {
 .score--wrapper {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2rem;
 }
 .score--card {
   display: flex;
@@ -193,7 +193,7 @@ footer {
   font-size: clamp(11px, 3vw, 15px);
 }
 
-@media Screen and (min-width: 950px) {
+@media Screen and (min-width: 700px) {
   body {
     align-items: center;
   }
@@ -203,6 +203,7 @@ footer {
   }
   .result--wrapper {
     flex-basis: 50%;
+    border-radius: 10px;
   }
   .summary--wrapper {
     flex-basis: 50%;

@@ -6,10 +6,10 @@ const scoreWrapper = document.querySelector(".score--wrapper");
 const scoreElement = document.querySelector(".score");
 
 function populateScore(data) {
-  console.log(data);
-  scoreWrapper.innerHTML = data.map(
-    (item) =>
-      `
+  scoreWrapper.innerHTML = data
+    .map(
+      (item) =>
+        `
         <div class="score--card ${item.category}--card">
             <div class="score--logo">
               <img src=${item.icon} alt="reaction" />
@@ -18,7 +18,8 @@ function populateScore(data) {
             <p class="total--score"><span>${item.score}</span> / 100</p>
           </div>
         `
-  );
+    )
+    .join("");
 }
 
 function setScore() {
