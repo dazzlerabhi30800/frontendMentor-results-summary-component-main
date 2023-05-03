@@ -52,8 +52,8 @@ main {
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
 }
 .result--wrapper > span {
@@ -63,9 +63,9 @@ main {
 }
 .result--wrapper > .result {
   background: linear-gradient(to bottom, #520fef, #2533f4);
-  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 15px 2px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 2.2rem;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -75,12 +75,12 @@ main {
 .result > h1 {
   color: var(--White);
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .result > p {
   color: #c6c4c4;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .greet--wrapper {
   display: flex;
