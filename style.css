@@ -48,12 +48,12 @@ main {
     var(--Light-royal-blue) 45%
   );
   padding: 1.5rem 1rem;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 20px 20px;
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 2.5rem;
   text-align: center;
 }
 .result--wrapper > span {
@@ -90,7 +90,7 @@ main {
 }
 .greet--wrapper > h2 {
   color: var(--White);
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: 800;
 }
 .greet--wrapper > p {
@@ -171,7 +171,7 @@ main {
 .continue--btn {
   background: var(--Dark-gray-blue);
   color: var(--White);
-  padding: 8px;
+  padding: 12px 0px;
   cursor: pointer;
   border-radius: 20px;
   text-align: center;
@@ -204,8 +204,13 @@ footer {
   .result--wrapper {
     flex-basis: 50%;
     border-radius: 10px;
+    justify-content: space-between;
+    gap: 0;
   }
   .summary--wrapper {
     flex-basis: 50%;
+  }
+  .continue--btn {
+    padding: 10px;
   }
 }
